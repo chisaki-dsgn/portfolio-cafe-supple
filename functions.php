@@ -37,5 +37,10 @@ add_action('wp_enqueue_scripts','my_theme_enqueue_scripts');
 
 function my_theme_setup(){
     add_theme_support('title-tag');
+
+    register_nav_menus(array(
+        'global-menu' => 'グローバルナビゲーション',
+        'footer-menu' => 'フッターメニュー'
+    ));
 }
 add_action('after_setup_theme', 'my_theme_setup');
