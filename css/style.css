@@ -376,7 +376,7 @@ img {
 }
 
 .p-top-menu {
-  background: url("../../img/bg-top-menu.jpg") no-repeat center/cover;
+  background: url("../../img/bg-top-menu.jpg')) ?>") no-repeat center/cover;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -533,11 +533,11 @@ img {
 }
 
 .p-concept__hero {
-  background: url("../../img/concept-kv-sp.jpg") no-repeat center/cover;
+  background: url("../../img/concept-kv-sp.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-concept__hero {
-    background-image: url("../../img/concept-kv-pc.jpg");
+    background-image: url("../../img/concept-kv-pc.jpg')) ?>");
   }
 }
 .p-concept__img {
@@ -581,11 +581,11 @@ img {
   }
 }
 .p-menu__hero {
-  background: url("../../img/menu-kv-sp.jpg") no-repeat center/cover;
+  background: url("../../img/menu-kv-sp.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-menu__hero {
-    background-image: url("../../img/menu-kv-pc.jpg");
+    background-image: url("../../img/menu-kv-pc.jpg')) ?>");
   }
 }
 .p-menu__lead {
@@ -660,11 +660,11 @@ img {
 }
 
 .p-shoplist__hero {
-  background: url("../../img/shoplist-kv-sp.jpg") no-repeat center/cover;
+  background: url("../../img/shoplist-kv-sp.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-shoplist__hero {
-    background-image: url("../../img/shoplist-kv-pc.jpg");
+    background-image: url("../../img/shoplist-kv-pc.jpg')) ?>");
   }
 }
 .p-shoplist .l-inner-wide {
@@ -734,11 +734,11 @@ img {
 }
 
 .p-archive-blog__hero {
-  background: url("../../img/blog-kv-sp.jpg") no-repeat center/cover;
+  background: url("../../img/blog-kv-sp.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-archive-blog__hero {
-    background-image: url("../../img/blog-kv-pc.jpg");
+    background-image: url("../../img/blog-kv-pc.jpg')) ?>");
   }
 }
 .p-archive-blog__list {
@@ -822,11 +822,11 @@ img {
 }
 
 .p-single-blog__hero {
-  background: url("../../img/blog-kv-sp.jpg") no-repeat center/cover;
+  background: url("../../img/blog-kv-sp.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-single-blog__hero {
-    background-image: url("../../img/blog-kv-pc.jpg");
+    background-image: url("../../img/blog-kv-pc.jpg')) ?>");
   }
 }
 .p-single-blog__post-img {
@@ -871,11 +871,11 @@ img {
 }
 
 .p-404__hero {
-  background: url("../../img/page-kv.jpg") no-repeat center/cover;
+  background: url("../../img/page-kv.jpg')) ?>") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .p-404__hero {
-    background-image: url("../../img/page-kv-1.jpg");
+    background-image: url("../../img/page-kv-1.jpg')) ?>");
   }
 }
 .p-404__text {

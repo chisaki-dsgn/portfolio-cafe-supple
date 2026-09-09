@@ -2,15 +2,15 @@
     <main class="p-top">
         <div class="p-top-kv">
             <picture>
-                <source media="(min-width:768px)" srcset="img/bg-top-kv.jpg">
-                <img src="img/bg-top-kv-sp.jpg" alt="カフェ店内の様子" width="720" height="1000">
+                <source media="(min-width:768px)" srcset="img/bg-top-kv.jpg')) ?>">
+                <img src="<?php echo esc_url(get_theme_file_uri('/img/bg-top-kv-sp.jpg')) ?>" alt="カフェ店内の様子" width="720" height="1000">
             </picture>
         </div>
         <section class="p-top-concept l-section">
             <h2>CONCEPT</h2>
             <div class="l-inner">
                 <div class="p-top-concept__img">
-                    <img src="img/concept-kv-sp.jpg" alt="挽きたてコーヒーの画像">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/concept-kv-sp.jpg')) ?>" alt="挽きたてコーヒーの画像">
                 </div>
                 <h3 class="p-top-concept__catch">一杯一杯まごころをこめて調製し、新鮮な香りと豊かな 風味のコーヒーを提供します。</h3>
                 <p class="p-top-concept__text">世界中の産地からこだわり抜いて買い付けた厳選豆を、<br class="pc-only">毎日最適な状態で焙煎しています。<br class="pc-only">忙しい毎日にそっと寄り添う、心地よい時間と極上の味わいをお届けします。</p>
@@ -106,8 +106,8 @@
         </section>
         <div class="p-top-separator">
             <picture>
-                <source media="(min-width:768px)" srcset="img/bg-top-separate.jpg">
-                <img src="img/bg-top-separate-sp.jpg" alt="" width="720" height="340">
+                <source media="(min-width:768px)" srcset="img/bg-top-separate.jpg')) ?>">
+                <img src="<?php echo esc_url(get_theme_file_uri('/img/bg-top-separate-sp.jpg')) ?>" alt="" width="720" height="340">
             </picture>
         </div>
         <section class="p-top-blog l-section">
@@ -115,21 +115,21 @@
             <ul class="p-top-blog__list l-inner">
                 <li class="p-top-blog__item">
                     <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="img/thumb-post01.jpg" alt="講習会の写真"></div>
+                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post01.jpg')) ?>" alt="講習会の写真"></div>
                         <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
                         <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
                     </a>
                 </li>
                 <li class="p-top-blog__item">
                     <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="img/thumb-post02.jpg" alt="講習会の写真"></div>
+                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post02.jpg')) ?>" alt="講習会の写真"></div>
                         <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
                         <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
                     </a>
                 </li>
                 <li class="p-top-blog__item">
                     <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="img/thumb-post03.jpg" alt="講習会の写真"></div>
+                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post03.jpg')) ?>" alt="講習会の写真"></div>
                         <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
                         <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
                     </a>

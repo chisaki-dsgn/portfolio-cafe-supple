@@ -9,7 +9,7 @@
                 <p class="p-menu__lead-sub">SUPPLEでは上質なコーヒー豆を<br>世界中から直接輸入しています。</p>
                 <ul class="p-menu__list">
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee.jpg" alt="エントランスブレンド"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee.jpg')) ?>" alt="エントランスブレンド"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">エントランスブレンド</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -17,7 +17,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee02.jpg" alt="コロンビア"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee02.jpg')) ?>" alt="コロンビア"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">コロンビア</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -25,7 +25,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee03.jpg" alt="エチオピアナチュラル"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee03.jpg')) ?>" alt="エチオピアナチュラル"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">エチオピアナチュラル</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -33,7 +33,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee.jpg" alt="グアテマラ"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee.jpg')) ?>" alt="グアテマラ"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">グアテマラ</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -41,7 +41,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee03.jpg" alt="ブラジル"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee03.jpg')) ?>" alt="ブラジル"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">ブラジル</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -49,7 +49,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee06.jpg" alt="タンザニア"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee06.jpg')) ?>" alt="タンザニア"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">タンザニア</h3>
                             <p class="p-menu__list-price">¥800</p>
@@ -57,7 +57,7 @@
                         </div>
                     </li>
                     <li class="p-menu__list-item">
-                        <div class="p-menu__list-img"><img src="img/pic-menu-coffee03.jpg" alt="フスクブレンド"></div>
+                        <div class="p-menu__list-img"><img src="<?php echo esc_url(get_theme_file_uri('/img/pic-menu-coffee03.jpg')) ?>" alt="フスクブレンド"></div>
                         <div class="p-menu__list-body">
                             <h3 class="p-menu__list-title">フスクブレンド</h3>
                             <p class="p-menu__list-price">¥800</p>

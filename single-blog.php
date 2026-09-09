@@ -6,7 +6,7 @@
         <div class="l-section">
             <div class="l-inner">
                 <div class="p-single-blog__post-img">
-                    <img src="img/thumb-post.jpg" alt="コーヒーを抽出する写真">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post.jpg')) ?>" alt="コーヒーを抽出する写真">
                 </div>
                 <time datetime="2021-01-01" class="p-single-blog__post-date">2021/01/01</time>
                 <h1 class="p-single-blog__post-title">豆の産地ごとに変わる「ベストな抽出温度」</h1>
