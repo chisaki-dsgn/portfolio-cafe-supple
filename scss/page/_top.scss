@@ -58,7 +58,7 @@
 // ==================================================
 
 .p-top-menu{
-    background: url('../../img/bg-top-menu.jpg') no-repeat center / cover;
+    background: url('../img/bg-top-menu.jpg') no-repeat center / cover;
     color: $color-text-inverse;
     &__flex{
         @include mq{
