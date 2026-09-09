@@ -32,5 +32,10 @@ function mytheme_enqueue_scripts(){
         )
     );
 }
-
 add_action('wp_enqueue_scripts','my_theme_enqueue_scripts');
+
+
+function my_theme_setup(){
+    add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'my_theme_setup');

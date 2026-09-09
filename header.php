@@ -3,15 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP | SUPPLE</title>
-    <meta name="description" content="こだわりコーヒーのカフェSUPPLE。世界中から直輸入したこだわりのコーヒー豆を挽きたてでご提供いたします。">    
-    <meta property="og:url" content="https://chisaki-dsgn.github.io/mosha-syugyo_cafe/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="TOP | SUPPLE">
-    <meta property="og:description" content="こだわりコーヒーのカフェSUPPLE。世界中から直輸入したこだわりのコーヒー豆を挽きたてでご提供いたします。">
-    <meta property="og:site-name" content="SUPPLE">
-    <meta property="og:image" content="https://chisaki-dsgn.github.io/mosha-syugyo_cafe/ogp.png">
-    <meta name="twitter:card" content="summary_large_image">
     <?php wp_head(); ?>
 </head>
 <body>
