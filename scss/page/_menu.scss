@@ -1,0 +1,73 @@
+@use '../foundations/variables' as *;
+
+.p-menu{
+    padding-top: 110px;
+    @include mq{
+        padding-top: 80px;
+    }
+    &__hero{
+        background: url('../../img/menu-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/menu-kv-pc.jpg');
+        }
+    }
+    &__lead{
+        font-size: rem(16);
+        line-height: $line-height-middle;
+        text-align: center;
+        margin-bottom: rem(24);
+        @include mq{
+            font-size: rem(20);
+        }
+    }
+    &__lead-sub{
+        margin-bottom: 
+        $spacing-block-sp;
+        text-align: center;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__list-item{
+        @include mq{
+            display: flex;
+            gap: $spacing-block-pc;
+            align-items: center;
+        }
+        &:not(:last-child){
+            margin-bottom: $spacing-block-sp;
+            @include mq{
+                margin-bottom: $spacing-block-pc;
+            }
+        }
+    }
+    &__list-img{
+        width: 100%;
+        margin-bottom: rem(16);
+        @include mq{
+            width: 30%;
+            margin-bottom: 0;
+        }
+    }
+    &__list-body{
+        @include mq{
+            flex: 1;
+        }
+    }
+    &__list-title{
+        font-size: rem(16);
+        line-height: $line-height-tight;
+        margin-bottom: rem(12);
+        @include mq{
+            font-size: rem(20);
+            margin-bottom: rem(16);
+        }
+    }
+    &__list-price{
+        line-height: $line-height-tight;
+        margin-bottom: rem(12);
+        @include mq{
+            margin-bottom: rem(24);
+        }
+    }
+}

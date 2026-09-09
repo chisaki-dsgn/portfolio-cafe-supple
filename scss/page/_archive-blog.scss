@@ -1,0 +1,77 @@
+@use '../foundations/variables' as *;
+
+.p-archive-blog{
+    &__hero{
+        background: url('../../img/blog-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/blog-kv-pc.jpg');
+        }
+    }
+    &__list{
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: $spacing-block-pc rem(30);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__list-item{
+        opacity: 1;
+        transition: opacity .3s ease;
+        &:not(:last-child){
+            margin-bottom: $spacing-block-sp;
+            @include mq{
+                margin-bottom: 0;
+            }
+        }
+        &:hover{
+            opacity: .7;
+        }
+    }
+    &__list-img{
+        margin-bottom: rem(16);
+        @include mq{
+            margin-bottom: rem(20);
+        }
+    }
+    &__list-date{
+        font-size: rem(12);
+        color: $color-text-primary;
+        font-family: $font-family-en;
+        line-height: $line-height-tight;
+        @include mq{
+            font-size: rem(14);
+        }
+    }
+    &__list-title{
+        font-size: rem(18);
+        line-height: $line-height-middle;
+        @include mq{
+            font-size: rem(22);
+        }
+    }
+    &__pagination{
+        display: flex;
+        justify-content: center;
+        gap: rem(8);
+        &-btn{
+            display: block;
+            width: 32px;
+            aspect-ratio: 1/1;
+            border: solid 1px ;
+            text-align: center;
+            line-height: 32px;
+            transition: background-color .3s ease, color .3s ease;
+            background-color: #fff;
+            @include mq{
+                width: 40px;
+                line-height: 40px;
+            }
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}

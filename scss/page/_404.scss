@@ -1,0 +1,23 @@
+@use '../foundations/variables' as *;
+
+.p-404{
+    &__hero{
+        background: url('../../img/page-kv.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/page-kv-1.jpg');
+        }
+    }
+    &__text{
+        margin-bottom: $spacing-block-sp;
+        text-align: center;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+        .pc-only{
+            display: none;
+            @include mq{
+                display: inline;
+            }
+        }
+    }
+}

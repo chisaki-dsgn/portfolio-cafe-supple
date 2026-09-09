@@ -1,0 +1,35 @@
+@use 'sass:math';
+
+$bp: 768px;
+@mixin mq{
+    @media(min-width:($bp)){
+    @content;
+    }
+}
+
+@function rem($px){
+    @return math.div($px, 16) + rem;
+}
+
+$color-bg-main: #fff;
+$color-bg-sub: #efede9;
+$color-bg-primary: #524433;
+$color-bg-accent: #000;
+
+$color-border-normal: #000;
+$color-border-inverse: #fff;
+
+$color-text-main: #000;
+$color-text-primary: #524433;
+$color-text-inverse: #fff;
+
+$font-family-jp: "Noto Sans JP", sans-serif;
+$font-family-en: "Montserrat", sans-serif;
+$font-family-base: "Montserrat", "Noto Sans JP", sans-serif;
+
+$line-height-base: 2;
+$line-height-tight: 1;
+$line-height-middle: 1.55;
+
+$spacing-block-sp: rem(40);
+$spacing-block-pc: rem(48);

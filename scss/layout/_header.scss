@@ -1,0 +1,96 @@
+@use '../foundations/variables' as *;
+
+.l-header{
+    font-family: $font-family-en;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-bg-main;
+    line-height: $line-height-tight;
+    height: 70px;
+    padding-left: rem(19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq{
+        height: 80px;
+        padding-left: rem(24);
+    }
+    &__logo{
+        width: 120px;
+        @include mq{
+            width: 200px;
+        }
+    }
+    &__nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $color-bg-primary;
+        color: $color-text-inverse;
+        opacity: 1;
+        visibility: visible;
+        transition: translate .3s ease, opacity .3s ease, visibility .3s ease;
+        @include mq{
+            position: static;
+            background-color: transparent;
+            color: $color-text-primary;
+        }
+        &.is-hidden{
+            translate: 0 -100%;
+            opacity: 0;
+            visibility: hidden;
+            @include mq{
+                translate: none;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: rem(16);
+        padding-block: rem(14);
+        font-size: rem(12);
+        @include mq{
+            justify-content: flex-end;
+            padding-right: rem(32);
+            font-size: rem(14);
+        }
+        li:not(:last-child){
+            padding-right: rem(16);
+            border-right: 1px solid ;
+            @include mq{
+                border-right: none;
+            }
+        }
+        .pc-only{
+            display: none;
+            @include mq{
+                display: inline;
+            }
+        }
+    }
+    &__btn{
+        display: block;
+        background-color: $color-bg-primary;
+        color: $color-text-inverse;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        font-size: rem(12);
+        line-height: 40px;
+        flex-shrink: 0;
+        @include mq{
+            width: 170px;
+            height: 45px;
+            font-size: rem(16);
+            line-height: 45px;
+        }
+    }
+}

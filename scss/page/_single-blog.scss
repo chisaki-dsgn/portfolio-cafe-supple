@@ -1,0 +1,42 @@
+@use '../foundations/variables' as *;
+
+.p-single-blog{
+    &__hero{
+        background: url('../../img/blog-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/blog-kv-pc.jpg');
+        }
+    }
+    &__post-img{
+        width: 100%;
+        margin-bottom: rem(16);
+        @include mq{
+            margin-bottom: rem(24);
+        }
+    }
+    &__post-date{
+        font-size: rem(12);
+        line-height: $line-height-tight;
+        color: $color-text-primary;
+        margin-bottom: rem(4);
+        font-family: $font-family-en;
+        @include mq{
+            font-size: rem(14);
+        }
+    }
+    &__post-title{
+        font-size: rem(22);
+        line-height: $line-height-middle;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            font-size: rem(26);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__paragraph{
+        margin-bottom: rem(32);
+        @include mq{
+            margin-bottom: rem(40);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use '../foundations/variables' as *;
+
+.p-concept{
+    &__hero{
+        background: url('../../img/concept-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/concept-kv-pc.jpg');
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__body{
+        text-align: center;
+        padding-block: $spacing-block-sp;
+        @include mq{
+            padding-block: $spacing-block-pc;
+        }
+    }
+    &__catch{
+        margin-bottom: rem(24);
+        font-size: rem(16);
+        line-height: $line-height-middle;
+        @include mq{
+            margin-bottom: rem(32);
+            font-size: rem(20);
+        }
+    }
+    &__text{
+        .pc-only{
+            display: none;
+            @include mq{
+                display: inline;
+            }
+        }
+    }
+}

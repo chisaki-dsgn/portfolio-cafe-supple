@@ -1,0 +1,65 @@
+@use '../foundations/variables' as *;
+
+.p-shoplist{
+    &__hero{
+        background: url('../../img/shoplist-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../../img/shoplist-kv-pc.jpg');
+        }
+    }
+    .l-inner-wide{
+        max-width: 1200px;
+    }
+    &__list{
+        @include mq{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $spacing-block-pc 3%;
+        }
+    }
+    &__list-item{
+        &:not(:last-child){
+            margin-bottom: $spacing-block-sp;
+            @include mq{
+                margin-bottom: 0;
+            }
+        }
+        @include mq{
+            display: flex;
+            gap: rem(24);
+            align-items: center;
+        }
+    }
+    &__list-img{
+        width: 100%;
+        margin-bottom: rem(16);
+        @include mq{
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+    &__list-body{
+        display: flex;
+        flex-direction: column;
+        gap: rem(4);
+        font-size: rem(12);
+        line-height: $line-height-middle;
+        @include mq{
+            flex: 1;
+            font-size: rem(14);
+        }
+    }
+    &__list-title{
+        font-size: rem(16);
+        @include mq{
+            font-size: rem(20);
+        }
+    }
+    &__list-tel{
+        font-size: rem(18);
+        font-family: $font-family-en;
+        @include mq{
+            font-size: rem(22);
+        }
+    }
+}

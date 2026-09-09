@@ -1,0 +1,81 @@
+@use '../foundations/variables' as *;
+
+.l-footer-instagram{
+    font-family: $font-family-en;
+    background-color: $color-bg-sub;
+    &__title{
+        font-size: rem(24);
+        text-align: center;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            font-size: rem(32);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(8) rem(9);
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            grid-template-columns: repeat(6 ,1fr);
+            gap: rem(32);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__post{
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+}
+
+.l-footer-main{
+    font-family: $font-family-jp;
+    background-color: $color-bg-primary;
+    color: $color-text-inverse;
+    text-align: center;
+    padding-block: rem(64) rem(16);
+    @include mq{
+        margin-block-start: rem(80) rem(24);
+    }
+    &__logo{
+        display: block;
+        width: 120px;
+        margin-bottom: rem(24);
+        margin-inline: auto;
+        @include mq{
+            width: 200px;
+            margin-bottom: rem(40);
+        }
+    }
+    &__shoplist{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: rem(24);
+    }
+    &__item{
+        line-height: 1.75;
+        &:not(:first-child){
+            &::before{
+                content: "/";
+                margin-inline: rem(6);
+                @include mq{
+                    margin-inline: rem(8);
+                }
+            }
+        }
+    }
+    &__address{
+        padding-bottom: rem(64);
+        font-size: rem(12);
+    }
+}
+.l-footer__copy{
+    display: block;
+    text-align: center;
+    font-size: rem(12);
+    background-color: $color-bg-primary;
+    color: $color-text-inverse;
+}

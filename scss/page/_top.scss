@@ -1,0 +1,208 @@
+@use '../foundations/variables' as *;
+
+.p-top{
+    h2{
+        font-family: $font-family-en;
+        font-size: rem(24);
+        text-align: center;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            font-size: rem(32);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &-kv{
+        width: 100%;
+    }
+    
+}
+
+// ==================================================
+// concept section
+// ==================================================
+
+.p-top-concept{
+    text-align: center;
+    &__img{
+        width: 100%;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__catch{
+        font-size: rem(16);
+        line-height: 1.75;
+        margin-bottom: rem(24);
+        @include mq{
+            margin-bottom: rem(32);
+            font-size: rem(20);
+        }
+    }
+    &__text{
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+        .pc-only{
+            display: none;
+            @include mq{
+                display: inline;
+            }
+        }
+    }
+}
+
+// ==================================================
+// menu section
+// ==================================================
+
+.p-top-menu{
+    background: url('../../img/bg-top-menu.jpg') no-repeat center / cover;
+    color: $color-text-inverse;
+    &__flex{
+        @include mq{
+            display: flex;
+            gap: rem(62);
+        }
+    }
+    &__drip{
+        flex: 1;
+    }
+    &__espresso{
+        flex: 1;
+    }
+    &__list-title{
+        margin-bottom: rem(16);
+        font-size: rem(18);
+        font-family: $font-family-en;
+        @include mq{
+            font-size: rem(20);
+        }
+    }
+    &__list{
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-block: rem(10);
+        border-bottom: 1px solid;
+        dt{
+            font-weight: 400;
+        }
+        @include mq{
+            padding-block: rem(8);
+        }
+    }
+    &__btn{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+// ==================================================
+// shoplist section
+// ==================================================
+
+.p-top-shoplist{
+    &__text{
+        text-align: center;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 230px));
+        gap: rem(16) rem(14);
+        margin-bottom: $spacing-block-sp;
+        justify-content: center;
+        @include mq{
+            grid-template-columns: repeat(3, minmax(0,230px));
+            gap: rem(24);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__item{
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        background-color: $color-bg-sub;
+        border-radius: 100px;
+        max-width: 230px;
+        @include mq{
+            height: 55px;
+            line-height: 55px;
+        }
+        a{
+            display: block;
+        }
+    }
+}
+
+// セクション間の画像
+.p-top-separator{
+    width: 100%;
+    height: 170px;
+    @include mq{
+        height: 370px;
+    }
+    picture{
+        display: block;
+        height: 100%;
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// ==================================================
+// blog&news section
+// ==================================================
+
+.p-top-blog{
+    &__list{
+        @include mq{
+            display: flex;
+            gap: 30px;
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__item{
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: 0;
+        }
+    }
+    &__card{
+        display: block;
+    }
+    &__img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin-bottom: rem(16);
+    }
+    &__time{
+        font-size: rem(12);
+        font-family: $font-family-en;
+        color: $color-text-primary;
+        margin-bottom: rem(8);
+        line-height: $line-height-tight;
+        @include mq{
+            font-size: rem(14);
+        }
+    }
+    &__card-title{
+        font-size: rem(18);
+        line-height: $line-height-middle;
+        @include mq{
+            font-size: rem(22);
+        }
+    }
+}
