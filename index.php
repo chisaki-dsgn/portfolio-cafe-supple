@@ -2,7 +2,7 @@
     <main class="p-top">
         <div class="p-top-kv">
             <picture>
-                <source media="(min-width:768px)" srcset="img/bg-top-kv.jpg')) ?>">
+                <source media="(min-width:768px)" srcset="<?php echo esc_url(get_theme_file_uri('/img/bg-top-kv.jpg')) ?>">
                 <img src="<?php echo esc_url(get_theme_file_uri('/img/bg-top-kv-sp.jpg')) ?>" alt="カフェ店内の様子" width="720" height="1000">
             </picture>
         </div>
@@ -106,7 +106,7 @@
         </section>
         <div class="p-top-separator">
             <picture>
-                <source media="(min-width:768px)" srcset="img/bg-top-separate.jpg')) ?>">
+                <source media="(min-width:768px)" srcset="<?php echo esc_url(get_theme_file_uri('/img/bg-top-separate.jpg')) ?>">
                 <img src="<?php echo esc_url(get_theme_file_uri('/img/bg-top-separate-sp.jpg')) ?>" alt="" width="720" height="340">
             </picture>
         </div>
