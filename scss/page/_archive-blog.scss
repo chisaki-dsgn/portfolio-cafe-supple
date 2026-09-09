@@ -2,9 +2,9 @@
 
 .p-archive-blog{
     &__hero{
-        background: url('../../img/blog-kv-sp.jpg') no-repeat center / cover;
+        background: url('../img/blog-kv-sp.jpg') no-repeat center / cover;
         @include mq{
-            background-image: url('../../img/blog-kv-pc.jpg');
+            background-image: url('../img/blog-kv-pc.jpg');
         }
     }
     &__list{

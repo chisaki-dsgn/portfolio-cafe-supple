@@ -6,9 +6,9 @@
         padding-top: 80px;
     }
     &__hero{
-        background: url('../../img/menu-kv-sp.jpg') no-repeat center / cover;
+        background: url('../img/menu-kv-sp.jpg') no-repeat center / cover;
         @include mq{
-            background-image: url('../../img/menu-kv-pc.jpg');
+            background-image: url('../img/menu-kv-pc.jpg');
         }
     }
     &__lead{

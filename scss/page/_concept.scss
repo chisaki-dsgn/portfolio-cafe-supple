@@ -2,9 +2,9 @@
 
 .p-concept{
     &__hero{
-        background: url('../../img/concept-kv-sp.jpg') no-repeat center / cover;
+        background: url('../img/concept-kv-sp.jpg') no-repeat center / cover;
         @include mq{
-            background-image: url('../../img/concept-kv-pc.jpg');
+            background-image: url('../img/concept-kv-pc.jpg');
         }
     }
     &__img{

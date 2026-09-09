@@ -15,7 +15,7 @@
                 <h3 class="p-top-concept__catch">一杯一杯まごころをこめて調製し、新鮮な香りと豊かな 風味のコーヒーを提供します。</h3>
                 <p class="p-top-concept__text">世界中の産地からこだわり抜いて買い付けた厳選豆を、<br class="pc-only">毎日最適な状態で焙煎しています。<br class="pc-only">忙しい毎日にそっと寄り添う、心地よい時間と極上の味わいをお届けします。</p>
             </div>
-            <a href="concept.html" class="p-top-concept__btn c-btn">MORE</a>
+            <a href="<?php echo esc_url(home_url('/concept')) ?>" class="p-top-concept__btn c-btn">MORE</a>
         </section>
         <section class="p-top-menu l-section">
             <h2 class="p-top-menu__title">MENU</h2>
@@ -87,7 +87,7 @@
                     </dl>
                 </div>
             </div>
-            <a href="menu.html" class="p-top-menu__btn c-btn">MORE</a>
+            <a href="<?php echo esc_url(home_url('/menu')) ?>" class="p-top-menu__btn c-btn">MORE</a>
         </section>
         <section class="p-top-shoplist l-section">
             <h2 class="p-top-shoplist__title">SHOP LIST</h2>
@@ -101,7 +101,7 @@
                     <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">銀座店</a></li>
                     <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">渋谷店</a></li>
                 </ul>
-                <a href="shoplist.html" class="p-top-shoplist__btn c-btn">MORE</a>
+                <a href="<?php echo esc_url(home_url('/shoplist')) ?>" class="p-top-shoplist__btn c-btn">MORE</a>
             </div>
         </section>
         <div class="p-top-separator">
@@ -135,7 +135,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="archive-blog.html" class="p-top-blog__btn c-btn">MORE</a>
+            <a href="<?php echo esc_url(get_post_type_archive_link('blog')) ?>" class="p-top-blog__btn c-btn">MORE</a>
         </section>
     </main>
     <?php get_footer(); ?>

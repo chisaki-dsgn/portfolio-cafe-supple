@@ -2,9 +2,9 @@
 
 .p-shoplist{
     &__hero{
-        background: url('../../img/shoplist-kv-sp.jpg') no-repeat center / cover;
+        background: url('../img/shoplist-kv-sp.jpg') no-repeat center / cover;
         @include mq{
-            background-image: url('../../img/shoplist-kv-pc.jpg');
+            background-image: url('../img/shoplist-kv-pc.jpg');
         }
     }
     .l-inner-wide{

@@ -2,9 +2,9 @@
 
 .p-404{
     &__hero{
-        background: url('../../img/page-kv.jpg') no-repeat center / cover;
+        background: url('../img/page-kv.jpg') no-repeat center / cover;
         @include mq{
-            background-image: url('../../img/page-kv-1.jpg');
+            background-image: url('../img/page-kv-1.jpg');
         }
     }
     &__text{
