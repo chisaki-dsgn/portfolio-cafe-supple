@@ -135,7 +135,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="<?php echo esc_url(get_post_type_archive_link('blog')) ?>" class="p-top-blog__btn c-btn">MORE</a>
+            <a href="<?php echo esc_url(get_post_type_archive_link('post')) ?>" class="p-top-blog__btn c-btn">MORE</a>
         </section>
     </main>
     <?php get_footer(); ?>
