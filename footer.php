@@ -25,7 +25,7 @@
         </section>
         <div class="l-footer-main">
             <div class="l-inner">
-                <a href="/" class="l-footer-main__logo"><img src="<?php echo esc_url(get_theme_file_uri('/img/logo-white.svg')) ?>" alt="SUPPLE"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="l-footer-main__logo"><img src="<?php echo esc_url(get_theme_file_uri('/img/logo-white.svg')) ?>" alt="SUPPLE"></a>
                 <ul class="l-footer-main__shoplist">
                     <li class="l-footer-main__item">
                         <a href="#"  onclick="event.preventDefault();">北千住店</a>
