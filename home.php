@@ -18,6 +18,7 @@
                     </li>
                 <?php endwhile; ?>
                 </ul>
+
                 <?php 
                 the_posts_pagination(array(
                     'mid_size' => 1,
@@ -26,16 +27,9 @@
 
                 ));
                 ?>
+                
             <?php endif; ?>
 
-                <!-- <div class="p-archive-blog__pagination">
-                    <a href="#" onclick="event.preventDefault();" class="p-archive-blog__pagination-btn"><</a>
-                    <a href="#" onclick="event.preventDefault();" class="p-archive-blog__pagination-btn">1</a>
-                    <a href="#" onclick="event.preventDefault();" class="p-archive-blog__pagination-btn">2</a>
-                    <a href="#" onclick="event.preventDefault();" class="p-archive-blog__pagination-btn">10</a>
-                    <div href="#" onclick="event.preventDefault();">…</div>
-                    <a href="#" onclick="event.preventDefault();" class="p-archive-blog__pagination-btn">></a>
-                </div> -->
             </div>
         </div>
     </main>

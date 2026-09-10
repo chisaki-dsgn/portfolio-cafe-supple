@@ -505,6 +505,11 @@ img {
 }
 .p-top-blog__card {
   display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.p-top-blog__card:hover {
+  opacity: 0.7;
 }
 .p-top-blog__img {
   width: 100%;
