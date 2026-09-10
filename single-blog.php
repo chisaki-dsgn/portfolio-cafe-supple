@@ -16,7 +16,7 @@
                     <p class="p-single-blog__paragraph">一方で、ブラジルやマンデリンなどのナッツ感や重厚なコクがある中深煎り〜深煎りの豆は「85〜88℃の低め」に設定するのがポイントです。低温でじっくりと淹れることで、刺さるような角のある苦味を抑え、甘みを含んだまろやかな口当たりと滑らかなトーストのようなコクを抽出できます。</p>
                     <p class="p-single-blog__paragraph">ご自宅でドリップする際は、ぜひ温度計を使ってお湯の温度を測ってみてください。豆の個性に合わせた温度調整を行うだけで、まるでプロが淹れたかのようなクリアで奥行きのある味わいを楽しめます。自分の好みに合わせた「ベスト温度」を探すのも、コーヒーの醍醐味の一つです。</p>
                 </div>
-                <a href="archive-blog.html" class="p-single-blog__btn c-btn">一覧へ戻る</a>
+                <a href="<?php echo esc_url(get_post_type_archive_link('blog')); ?>" class="p-single-blog__btn c-btn">一覧へ戻る</a>
             </div>
         </div>
     </main>
