@@ -33,7 +33,13 @@
             margin-bottom: $spacing-block-pc;
         }
     }
-    &__paragraph{
+    &__post-body{
+        margin-bottom: rem(32);
+        @include mq{
+            margin-bottom: rem(40);
+        }
+    }
+    p{
         margin-bottom: rem(32);
         @include mq{
             margin-bottom: rem(40);

@@ -51,11 +51,11 @@
             font-size: rem(22);
         }
     }
-    &__pagination{
+    .nav-links{
         display: flex;
         justify-content: center;
         gap: rem(8);
-        &-btn{
+        .page-numbers{
             display: block;
             width: 32px;
             aspect-ratio: 1/1;

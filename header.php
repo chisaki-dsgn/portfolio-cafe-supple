@@ -21,7 +21,7 @@
             wp_nav_menu( array(
                 'theme_location' => 'global-menu',
                 'container' => false,
-                'menu_class' => 'l-header-list',
+                'menu_class' => 'l-header__list',
             ));
             ?>
         </nav>

@@ -44,7 +44,7 @@ add_action('wp_enqueue_scripts','mytheme_enqueue_scripts');
 
 function my_theme_setup(){
     add_theme_support('title-tag');
-
+    add_theme_support('post-thumbnails');
     register_nav_menus(array(
         'global-menu' => 'グローバルナビゲーション',
         'footer-menu' => 'フッターメニュー'
