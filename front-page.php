@@ -112,29 +112,32 @@
         </div>
         <section class="p-top-blog l-section">
             <h2 class="p-top-blog__title">BLOG & NEWS</h2>
+
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+            );
+            $the_query = new WP_Query($args);
+            ?>
+
+            <?php if($the_query->have_posts()) : ?>
             <ul class="p-top-blog__list l-inner">
+                <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
                 <li class="p-top-blog__item">
-                    <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post01.jpg')) ?>" alt="講習会の写真"></div>
-                        <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
-                        <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
+                    <a href="<?php the_permalink(); ?>" class="p-top-blog__card">
+                        <div class="p-top-blog__img"><?php the_post_thumbnail(); ?></div>
+                        <time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="p-top-blog__time"><?php echo get_the_date('Y/m/d'); ?></time>
+                        <h3 class="p-top-blog__card-title"><?php the_title(); ?></h3>
                     </a>
                 </li>
-                <li class="p-top-blog__item">
-                    <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post02.jpg')) ?>" alt="講習会の写真"></div>
-                        <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
-                        <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
-                    </a>
-                </li>
-                <li class="p-top-blog__item">
-                    <a href="single-blog.html" class="p-top-blog__card">
-                        <div class="p-top-blog__img"><img src="<?php echo esc_url(get_theme_file_uri('/img/thumb-post03.jpg')) ?>" alt="講習会の写真"></div>
-                        <time datetime="2021-01-01" class="p-top-blog__time">2021/01/01</time>
-                        <h3 class="p-top-blog__card-title">講習会を開催しました</h3>
-                    </a>
-                </li>
+                <?php endwhile; ?>
             </ul>
+            <?php else : ?>
+                <P>記事が見つかりませんでした</P>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
+
             <a href="<?php echo esc_url(get_post_type_archive_link('post')) ?>" class="p-top-blog__btn c-btn">MORE</a>
         </section>
     </main>
