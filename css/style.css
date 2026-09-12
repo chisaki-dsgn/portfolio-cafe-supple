@@ -884,6 +884,79 @@ img {
   }
 }
 
+.p-single-shoplist__hero {
+  background: url("../img/shoplist-kv-sp.jpg") no-repeat center/cover;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__hero {
+    background-image: url("../img/shoplist-kv-pc.jpg");
+  }
+}
+.p-single-shoplist__flex {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__flex {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.p-single-shoplist__img {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__img {
+    width: 60%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__body {
+    flex: 1;
+  }
+}
+.p-single-shoplist__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.p-single-shoplist__address {
+  margin-bottom: 0.25rem;
+}
+.p-single-shoplist__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.p-single-shoplist__tel {
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__tel {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+  }
+}
+.p-single-shoplist__map {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__map {
+    margin-bottom: 3rem;
+    height: 400px;
+  }
+}
+
 .p-404__hero {
   background: url("../img/page-kv.jpg") no-repeat center/cover;
 }

@@ -39,6 +39,10 @@
     &__address{
         margin-bottom: rem(4);
     }
+    &__info{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
     &__tel{
         font-size: rem(18);
         margin-bottom: rem(10);

@@ -2,27 +2,27 @@
 
 <main class="p-single-shoplist">
     <div class="p-single-shoplist__hero page-hero">
-            <div class="p-single-shoplist__title page-title">SHOPLIST</div>
+        <div class="p-single-shoplist__title page-title">SHOPLIST</div>
     </div>
     <div class="l-inner-wide">
         <div class="l-section">
             <div class="p-single-shoplist__flex">
                 <div class="p-single-shoplist__img">
-                    <img src="<?php echo esc_url(get_theme_file_uri('/img/pic-shoplist-kitasenju.jpg')); ?>" alt="">
+                    <?php the_post_thumbnail('full'); ?>
                 </div>
                 <div class="p-single-shoplist__body">
-                    <h1 class="p-single-shoplist__title">北千住店</h1>
-                    <p class="p-single-shoplist__address">〒123-4567 東京都渋谷区abc</p>
-                    <p class="p-single-shoplist__tel">TEL.03-0000-0000</p>
+                    <h1 class="p-single-shoplist__title"><?php the_title(); ?></h1>
+                    <p class="p-single-shoplist__address"><?php echo esc_html(get_field('shoplist-address')); ?></p>
+                    <p class="p-single-shoplist__tel">TEL.<?php echo esc_html(get_field('shoplist-tel')); ?></p>
                     <dl class="p-single-shoplist__info">
                         <dt>営業時間 /</dt>
-                        <dd><time datetime="">11:00</time> - <time datetime="">23:00</time></dd>
+                        <dd><time datetime="<?php echo esc_attr(get_field('shoplist-open')); ?>"><?php echo esc_html(get_field('shoplist-open')); ?></time> - <time datetime="<?php echo esc_attr(get_field('shoplist-close')); ?>"><?php echo esc_html(get_field('shoplist-close')); ?></time></dd>
                         <dt>座席 /</dt>
-                        <dd>30席</dd>
+                        <dd><?php echo esc_html(get_field('shoplist-capacity')); ?>席</dd>
                         <dt>喫煙 /</dt>
-                        <dd>可</dd>
+                        <dd><?php echo get_field('shoplist-smoking') ? '可' : '不可' ; ?></dd>
                         <dt>アクセス /</dt>
-                        <dd>北千住駅から徒歩5分</dd>
+                        <dd><?php echo esc_html(get_field('shoplist-access')); ?></dd>
                     </dl>
                 </div>
             </div>
