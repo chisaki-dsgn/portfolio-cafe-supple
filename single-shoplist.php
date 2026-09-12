@@ -16,7 +16,7 @@
                     <p class="p-single-shoplist__tel">TEL.03-0000-0000</p>
                     <dl class="p-single-shoplist__info">
                         <dt>営業時間 /</dt>
-                        <dd>11:00 ~ 23:00</dd>
+                        <dd><time datetime="">11:00</time> - <time datetime="">23:00</time></dd>
                         <dt>座席 /</dt>
                         <dd>30席</dd>
                         <dt>喫煙 /</dt>
