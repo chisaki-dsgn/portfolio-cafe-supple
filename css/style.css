@@ -691,20 +691,22 @@ img {
     margin-bottom: 0;
   }
 }
+.p-shoplist__card {
+  display: block;
+  opacity: 1;
+  scale: 1;
+  transition: opacity 0.3s ease, scale 0.3s ease;
+}
 @media (min-width: 768px) {
-  .p-shoplist__list-item {
+  .p-shoplist__card {
     display: flex;
     gap: 1.5rem;
     align-items: center;
   }
 }
-.p-shoplist__card {
-  display: block;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
 .p-shoplist__card:hover {
   opacity: 0.7;
+  scale: 0.95;
 }
 .p-shoplist__list-img {
   width: 100%;
@@ -717,6 +719,8 @@ img {
   }
 }
 .p-shoplist__list-body {
+  width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
