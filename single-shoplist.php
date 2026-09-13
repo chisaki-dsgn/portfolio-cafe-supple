@@ -45,3 +45,4 @@
         </div>
     </div>
 </main>
+<? get_footer(); ?>
