@@ -24,10 +24,21 @@
                 margin-bottom: 0;
             }
         }
+
+    }
+    &__card{
+        display: block;
+        opacity: 1;
+        scale: 1;
+        transition: opacity .3s ease, scale .3s ease;
         @include mq{
             display: flex;
             gap: rem(24);
             align-items: center;
+        }
+        &:hover{
+            opacity: .7;
+            scale: .95;
         }
     }
     &__list-img{
@@ -39,6 +50,8 @@
         }
     }
     &__list-body{
+        width: 100%;
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
         gap: rem(4);

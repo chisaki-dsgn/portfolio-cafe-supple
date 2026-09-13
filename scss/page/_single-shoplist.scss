@@ -1,0 +1,64 @@
+@use '../foundations/variables' as *;
+
+.p-single-shoplist{
+    &__hero{
+        background: url('../img/shoplist-kv-sp.jpg') no-repeat center / cover;
+        @include mq{
+            background-image: url('../img/shoplist-kv-pc.jpg');
+        }
+    }
+    &__flex{
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            display: flex;
+            gap: rem(48);
+            margin-bottom: $spacing-block-pc;
+        }
+    }
+    &__img{
+        width: 100%;
+        margin-bottom: rem(10);
+        @include mq{
+            width: 60%;
+            margin-bottom: 0;
+        }
+    }
+    &__body{
+        @include mq{
+            flex: 1;
+        }
+    }
+    &__title{
+        font-size: rem(20);
+        margin-bottom: rem(10);
+        @include mq{
+            font-size: rem(32);
+            margin-bottom: rem(16);
+        }
+    }
+    &__address{
+        margin-bottom: rem(4);
+    }
+    &__info{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    &__tel{
+        font-size: rem(18);
+        margin-bottom: rem(10);
+        font-family: $font-family-en;
+        @include mq{
+            font-size: rem(22);
+            margin-bottom: rem(16);
+        }
+    }
+    &__map{
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-bottom: $spacing-block-sp;
+        @include mq{
+            margin-bottom: $spacing-block-pc;
+            height: 400px;
+        }
+    }
+}

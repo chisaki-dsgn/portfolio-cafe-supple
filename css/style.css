@@ -459,6 +459,11 @@ img {
   background-color: #efede9;
   border-radius: 100px;
   max-width: 230px;
+  scale: 1;
+  transition: scale 0.3s ease;
+}
+.p-top-shoplist__item:hover {
+  scale: 1.05;
 }
 @media (min-width: 768px) {
   .p-top-shoplist__item {
@@ -691,12 +696,22 @@ img {
     margin-bottom: 0;
   }
 }
+.p-shoplist__card {
+  display: block;
+  opacity: 1;
+  scale: 1;
+  transition: opacity 0.3s ease, scale 0.3s ease;
+}
 @media (min-width: 768px) {
-  .p-shoplist__list-item {
+  .p-shoplist__card {
     display: flex;
     gap: 1.5rem;
     align-items: center;
   }
+}
+.p-shoplist__card:hover {
+  opacity: 0.7;
+  scale: 0.95;
 }
 .p-shoplist__list-img {
   width: 100%;
@@ -709,6 +724,8 @@ img {
   }
 }
 .p-shoplist__list-body {
+  width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -881,6 +898,79 @@ img {
 @media (min-width: 768px) {
   .p-single-blog p {
     margin-bottom: 2.5rem;
+  }
+}
+
+.p-single-shoplist__hero {
+  background: url("../img/shoplist-kv-sp.jpg") no-repeat center/cover;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__hero {
+    background-image: url("../img/shoplist-kv-pc.jpg");
+  }
+}
+.p-single-shoplist__flex {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__flex {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.p-single-shoplist__img {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__img {
+    width: 60%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__body {
+    flex: 1;
+  }
+}
+.p-single-shoplist__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.p-single-shoplist__address {
+  margin-bottom: 0.25rem;
+}
+.p-single-shoplist__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.p-single-shoplist__tel {
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__tel {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+  }
+}
+.p-single-shoplist__map {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-single-shoplist__map {
+    margin-bottom: 3rem;
+    height: 400px;
   }
 }
 
