@@ -26,11 +26,21 @@
                     </dl>
                 </div>
             </div>
+            <?php 
+            if(get_field('shoplist-address')):
+                $encoded_address = urlencode(get_field('shoplist-address'));
+            ?>
             <div class="p-single-shoplist__map">
-                <iframe src="" frameborder="0">
-                    
+                <iframe 
+                src="https://maps.google.com/maps?q=<? echo esc_attr($encoded_address); ?>&output=embed&t=m&z=15" 
+                title="店舗の所在地マップ"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                allowfullscreen>
                 </iframe>
             </div>
+            <?php endif; ?>
             <a href="<?php echo esc_url(get_post_type_archive_link('shoplist')) ;?>" class="p-single-shoplist__btn c-btn">BACK</a>
         </div>
     </div>
