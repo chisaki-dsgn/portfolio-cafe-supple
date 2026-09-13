@@ -26,26 +26,27 @@
         <div class="l-footer-main">
             <div class="l-inner">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="l-footer-main__logo"><img src="<?php echo esc_url(get_theme_file_uri('/img/logo-white.svg')) ?>" alt="SUPPLE"></a>
-                <ul class="l-footer-main__shoplist">
-                    <li class="l-footer-main__item">
-                        <a href="#"  onclick="event.preventDefault();">北千住店</a>
-                    </li>
-                    <li class="l-footer-main__item">
-                        <a href="#" onclick="event.preventDefault();">代官山店</a>
-                    </li>
-                    <li class="l-footer-main__item">
-                        <a href="#" onclick="event.preventDefault();">新宿店</a>
-                    </li>
-                    <li class="l-footer-main__item">
-                        <a href="#" onclick="event.preventDefault();">八王子店</a>
-                    </li>
-                    <li class="l-footer-main__item">
-                        <a href="#" onclick="event.preventDefault();">銀座店</a>
-                    </li>
-                    <li class="l-footer-main__item">
-                        <a href="#" onclick="event.preventDefault();">渋谷店</a>
-                    </li>
-                </ul>
+
+                <?php 
+                $args = array(
+                    'post_type' => 'shoplist',
+                    'posts_per_page' => -1,
+                );
+                $the_query = new WP_Query($args);
+                ?>
+                
+                <?php if($the_query -> have_posts()) : ?>
+                    <ul class="l-footer-main__shoplist">
+                        <?php while($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                            <li class="l-footer-main__item">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                <?php endif; ?>
+
+                <?php wp_reset_postdata(); ?>
+
                 <address class="l-footer-main__address">
                     株式会社SUPPLE<br>
                     〒123-4567 東京都渋谷区ABC
