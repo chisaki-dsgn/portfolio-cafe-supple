@@ -93,14 +93,29 @@
             <h2 class="p-top-shoplist__title">SHOP LIST</h2>
             <div class="l-inner">
                 <p class="p-top-shoplist__text">首都圏を中心に6店舗展開しています。<br>お近くの店舗でお待ちしています。</p>
+
+                <?php 
+                $args = array(
+                    'post_type' => 'shoplist',
+                    'posts_per_page' => -1
+                );
+                $posts = get_posts($args);
+
+                if(! empty($posts)) : ?>
                 <ul class="p-top-shoplist__list">
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">北千住店</a></li>
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">代官山店</a></li>
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">新宿店</a></li>
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">八王子店</a></li>
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">銀座店</a></li>
-                    <li class="p-top-shoplist__item"><a href="#" onclick="event.preventDefault();">渋谷店</a></li>
+                <?php 
+                foreach($posts as $post) : setup_postdata($post); ?>
+                    <li class="p-top-shoplist__item">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </li>
+                <?php 
+                endforeach; ?>
                 </ul>
+                <?php 
+                wp_reset_postdata(); 
+                endif; 
+                ?>
+                
                 <a href="<?php echo esc_url(home_url('/shoplist/')) ?>" class="p-top-shoplist__btn c-btn">MORE</a>
             </div>
         </section>

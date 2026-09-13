@@ -459,6 +459,11 @@ img {
   background-color: #efede9;
   border-radius: 100px;
   max-width: 230px;
+  scale: 1;
+  transition: scale 0.3s ease;
+}
+.p-top-shoplist__item:hover {
+  scale: 1.05;
 }
 @media (min-width: 768px) {
   .p-top-shoplist__item {

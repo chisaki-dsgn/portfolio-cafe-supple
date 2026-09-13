@@ -135,6 +135,11 @@
         background-color: $color-bg-sub;
         border-radius: 100px;
         max-width: 230px;
+        scale: 1;
+        transition: scale .3s ease;
+        &:hover{
+            scale: 1.05;
+        }
         @include mq{
             height: 55px;
             line-height: 55px;
