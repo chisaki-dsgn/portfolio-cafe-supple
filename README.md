@@ -1,7 +1,10 @@
+
+
+
 # 架空カフェ[SUPPLE]Webサイト制作（WordPressオリジナルテーマ化版）
 
 ## 概要
-- **制作内容**：[静的サイト版](https://github.com/chisaki-dsgn/mosya-syugyo_cafe)で作成したHTML/CSSをベースに構築したオリジナルテーマ開発です。
+- **制作内容**：[静的サイト版](https://github.com/chisaki-dsgn/mosha-shugyo_cafe)で作成したHTML/CSSをベースに構築したオリジナルテーマ開発です。
 - **デザインカンプ出典**：『模写修行』（[https://moshashugyo.com/](https://moshashugyo.com/)）
 
 ## 公開URL
@@ -9,10 +12,12 @@
 
 ## 管理画面・動作デモ
 **[カスタム投稿デモ動画]**
-<video src="./media/wp_demo.mp4" controls width="100%"></video>
+
+https://github.com/user-attachments/assets/e39c1a75-fa96-4775-8d89-c42973b51db1
+
 
 ## 制作期間・担当範囲
-- **制作期間**：約14時間（元の静的サイトのコーディング時間を除く）
+- **制作期間**：約15時間（元の静的サイトのコーディング時間を除く）
 - **担当範囲**：静的サイトからのオリジナルテーマ開発（WordPress化）/ 追加ページの実装
 ## ページ構成・実装セクション
 - ヘッダー
